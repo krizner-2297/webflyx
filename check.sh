@@ -5,7 +5,7 @@ RED="\e[31m"
 
 # Run the command and capture output
 clear
-output=$(git branch)
+output=$(git --no-pager log -n 5)
 exit_code=$?
 
 # Verify exit code
